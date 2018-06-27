@@ -30,7 +30,7 @@ Installation steps:
 	
 	Note: 
 	a) If you already have an earlier version of Osdag installed on your system, then skip Command 1.
-	b)	After entering Command 1, while installing Miniconda2, you will be asked whether you wish to set the system default python to Miniconda2. You need to agree to this, in order for Command 2 to work. Alternatively, you may manually execute the steps in the script 2-install-osdag.sh, and specify the python version while calling pip to install pdfkit.
+	b) After entering Command 1, while installing Miniconda2, you will be asked whether you wish to set the system default python to Miniconda2. You need to agree to this, in order for Command 2 to work. Alternatively, you may manually execute the steps in the script 2-install-osdag.sh, and specify the python version while calling pip to install pdfkit.
     
 	
 Running Osdag:
