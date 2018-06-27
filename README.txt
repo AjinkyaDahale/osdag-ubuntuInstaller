@@ -25,8 +25,8 @@ Installation steps:
 2) In bash, navigate to the extracted installation folder containing the shell scripts (the folder that contains this README file) and a folder named Osdag, and enter Command 1 and Command 2 given below.
 	
 	Commands:
-    1) bash 1-install-Miniconda2-latest-Linux-x86_64.sh
-    2) bash 2-install-osdag.sh
+	1) bash 1-install-Miniconda2-latest-Linux-x86_64.sh
+	2) bash 2-install-osdag.sh
 	
 	Note: 
 	a) If you already have an earlier version of Osdag installed on your system, then skip Command 1.
