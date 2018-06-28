@@ -1,6 +1,6 @@
 Ubuntu Installer:
 =================
-
+This setup script is for machines running Ubuntu. 
 
 
 System Requirements:
