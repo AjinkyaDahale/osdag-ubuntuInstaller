@@ -1,7 +1,7 @@
 #! /bin/sh
 
 #To check if there is a cached versionn of Tl available
-export PATH=~/texlive/bin/x86_64-linux:$PATH
+export PATH=~/texlive/2020/bin/x86_64-linux:$PATH
 if ! command -v texlua > /dev/null; then
 	#Obtain Tex Live
 	wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
