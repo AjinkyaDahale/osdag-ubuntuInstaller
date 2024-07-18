@@ -1,6 +1,6 @@
 # Ubuntu Installer 
 
-This setup script is for machines running Ubuntu 24.04 LTS. 
+This setup script is for machines running Ubuntu 24.04 LTS. Make sure you have an active internet connection when running the scripts.
 
 
 ## System Requirements:
