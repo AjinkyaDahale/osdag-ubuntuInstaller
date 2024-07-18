@@ -1,4 +1,5 @@
 #! /bin/sh
+rm -rf ~/Osdag
 set -x
 pwd
 cd Osdag
@@ -18,12 +19,18 @@ echo "Exec=$HOME/Osdag/osdagMainPage.py">>Osdag.desktop
 echo "Path=$HOME/Osdag">>Osdag.desktop
 echo "Icon=$HOME/Osdag/Osdag_Icon.ico">>Osdag.desktop
 chmod 755  Osdag.desktop
-echo -e "#!$HOME/miniconda3/bin/python3" | cat - osdagMainPage.py > temp && mv temp osdagMainPage.py
+echo  "#!$HOME/miniconda3/bin/python3" | cat - osdagMainPage.py > temp && mv temp osdagMainPage.py
 chmod 755  osdagMainPage.py
 # Install Osdag
 cp -r ../Osdag/. ~/Osdag
 #bash Miniconda3-latest-Linux-x86_64.sh -b
+conda create -n osdagenv python=3.7.6
+conda init bash
+source activate osdagenv
+echo "Created and Activated conda environment with python=3.7.6"
+. ~/.bashrc
 cd ../dependencies/
+sudo apt-get install gcc
 conda install blas-1.0-mkl.tar.bz2
 conda install certifi-2020.4.5.1-py37_0.tar.bz2
 conda install conda-4.8.3-py37_0.tar.bz2
@@ -95,12 +102,17 @@ pip install openpyxl-3.0.3.tar.gz
 pip install PyYAML-5.3.1.tar.gz
 pip install PyQt5-5.14.2-5.14.2-cp35.cp36.cp37.cp38-abi3-manylinux2014_x86_64.whl
 pip install pdfkit-0.6.1-py3-none-any.whl
+pip install pandas-1.0.5-cp37-cp37m-manylinux1_x86_64.whl
+pip install pynput-1.6.8-py2.py3-none-any.whl
+pip install PyGithub-1.54.1.tar.gz
 #OCC
 conda install oce-0.18.3-3.tar.bz2
 conda install pythonocc-core-0.18.2-py37_283.tar.bz2
 conda install smesh-6.7.6-7.tar.bz2
 conda install tbb-2019.9-hc9558a2_0.tar.bz2
+
 pwd
 set +x
 echo "All required packages were installed"
+
 
